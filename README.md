@@ -42,14 +42,14 @@ DELETE /usuarios?:id
 {
   "nome": "Lucas",
   "email":
-"lucas.algarve.pereira@gmail.com,
+"lucas.algarve.pereira@gmail.com",
   "idade": 31
 }
 
 
-Executando
+##Executando
 
-Bash
+###Bash
 
 git clone <url-do-repositorio>
 cd node-api
@@ -57,7 +57,7 @@ npm install
 node server.js
 
 
-Estrutura do Projeto
+##Estrutura do Projeto
 
 src/
 ├── config/
