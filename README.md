@@ -47,23 +47,4 @@ DELETE /usuarios?:id
 }
 
 
-##Executando
-
-###Bash
-
-git clone <url-do-repositorio>
-cd node-api
-npm install
-node server.js
-
-
-##Estrutura do Projeto
-
-src/
-├── config/
-├── controllers/
-├── models/
-├── routes/
-└── server.js
-
 
