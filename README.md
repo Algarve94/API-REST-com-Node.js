@@ -33,7 +33,7 @@ POST /usuarios
 PUT /usuarios/:id
 
 ### Deletar usuário
-DELETE /usuarios?:id
+DELETE /usuarios/:id
 
 
 ## Exemplo de requisição
@@ -41,10 +41,37 @@ DELETE /usuarios?:id
 ```json
 {
   "nome": "Lucas",
-  "email":
-"lucas.algarve.pereira@gmail.com",
+  "email": "lucas.algarve.pereira@gmail.com",
   "idade": 31
 }
+```
 
 
+## Como executar
 
+```bash
+git clone <url-do-repositorio>
+cd rest-api-code
+npm install
+node server.js
+```
+
+## Testes
+API testada utilizando Postman para validação das rotas e respostas.
+
+## Estrutura do projeto
+```
+src/
+├── config/
+├── controllers/
+├── models/
+├── routes/
+├── middlewares/
+└── server.js
+```
+
+## Melhorias futuras
+- Validação de dados
+- Autenticação com JWT
+- Paginação de resultados
+- Tratamento de erros global
