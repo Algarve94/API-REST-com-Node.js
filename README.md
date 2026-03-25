@@ -1,88 +1,69 @@
-# API-REST-com-Node.js
-Projeto de API REST desenvolvido com Node.js e Express para gerenciamento de dados e implementação de rotas dinâmicas, utilizando bancos de dados SQL e MongoDB.
+# API-REST - Gerenciamento de Usuários
+API REST desenvolvida com Node.js e Express para gerenciamento de usuários, com integração a bancos SQL e MongoDB.
 
-# API REST com Node.js e Express
+## Objetivo
+Esse projeto foi criado para praticar conceitos de backend, incluindo:
+- Criação de APIs RESTful
+- Estruturação em padrão MVC
+- Integração com banco de dados
+- Manipulação de requisições HTTP
 
-Projeto de API REST desenvolvido utilizando Node.js e Express para gerenciamento de dados e manipulação de requisições HTTP.
-
-## Tecnologias utilizadas
-
-- JavaScript
+## Tecnologias 
 - Node.js
 - Express.js
 - MongoDB
 - SQL
-- JSON
+- JavaScript
 
 ## Funcionalidades
-
-- Criação de rotas REST
+- CRUD completo de usuários
 - Uso de middlewares
-- Parâmetros de rota
-- Query strings
+- Parâmetros de rota e query strings
 - Integração com banco de dados
-- Manipulação de dados em JSON
+- Respostas em JSON
 
-## Como executar o projeto
-
-1. Clonar o repositório
-2. Instalar dependências
-
-npm install
-
-3. Executar o servidor
-
-node index.js
-
-## Exemplo de rota da API
-
+## Rotas da API
+### Listar usuários
 GET /usuarios
-Rota para listar usuarios
+
+### Criar usuário
 POST /usuarios
-Criar novo usuario
-PUT /usuarios
-Para atualizar dados do usuario
-DELETE /usuarios
-Para excluir usuario
 
-## JSON
+### Atualizar usuário
+PUT /usuarios/:id
 
+### Deletar usuário
+DELETE /usuarios?:id
+
+
+## Exemplo de requisição
+
+```json
 {
   "nome": "Lucas",
-  "email": "lucas.algarve.pereira@gmail.com,
+  "email":
+"lucas.algarve.pereira@gmail.com,
   "idade": 31
 }
 
-## Postman
 
-API testada utilizando Postman para validação das rotas e respostas.
+Executando
 
-## Estrutura
+Bash
 
-node-api
-│
-├── config
-│   └── db.js
-│
-├── models
-│   └── usuario.js
-│
-├── controllers
-│   └── usuarioController.js
-│
-├── routes
-│   └── usuarioRoutes.js
-│
-├── package.json
+git clone <url-do-repositorio>
+cd node-api
+npm install
+node server.js
+
+
+Estrutura do Projeto
+
+src/
+├── config/
+├── controllers/
+├── models/
+├── routes/
 └── server.js
-
-
-## Estrutura do projeto
-
-config      -> conexão com banco de dados
-models      -> estrutura dos dados
-controllers -> lógica da aplicação
-routes      -> definição das rotas da API
-server.js   -> inicialização do servidor
 
 
